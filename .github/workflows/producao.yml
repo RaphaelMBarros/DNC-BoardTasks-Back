@@ -3,16 +3,19 @@ env:
   NODE_ENV: production
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
 on:
   push:
     branches:
       - main
+
+
 jobs:
 
 
 
   job1:
-    name: CI - Build e criação
+    name: CI - Build e criação do artefato
     runs-on: ubuntu-latest
     steps: 
       - name: Pegar código do Repositório
@@ -25,7 +28,10 @@ jobs:
         run: npm run autoDoc
 
       - name: Apagando pasta node_modules
-        run: rm -rf .git
+        run: rm -rf node_modules
+
+      - name: Apagando pasta .git
+        run: rm -rf .git  
 
       - name: Arquivos e pastas
         run: ls

@@ -1,5 +1,5 @@
 {
     "ignore": [
-        "./swagger_output.json"
+        "./swagger/swagger_output.json"
     ]
 }

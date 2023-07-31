@@ -6,7 +6,6 @@
     "start": "node ./index.js",
     "autoDoc": "node ./swagger/autoGenDoc.js",
     "dev": "npx nodemon ./swagger/autoGenDoc.js"
-    
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -19,5 +18,9 @@
     "morgan": "~1.9.1",
     "swagger-autogen": "^2.23.1",
     "swagger-ui-express": "^4.6.3"
-  }
+  },
+  "description": "Projeto em Express.js do BoardTasks Back-End feito para o curso do Rubens Flinco na escola DNC.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

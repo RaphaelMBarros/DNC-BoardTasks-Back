@@ -28,7 +28,7 @@ async function authDocProducao(req, res, next){
         res.send(Buffer.from(`
             <form method = "post"> 
                 <lable for = "senha">Senha da documentação</label>
-                <input type = "password" name = "senhaDigitada" id = "senhaDigitada" />
+                <input type = "password" name = "senhaDigitada" id = "senhaDigitada" placeholder="Senha para acessar a doc da API"/>
                 <button type = "submit">Entrar</button>
             </form>
         `))
