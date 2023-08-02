@@ -18,7 +18,8 @@
     "morgan": "~1.9.1",
     "string": "^3.3.3",
     "swagger-autogen": "^2.23.1",
-    "swagger-ui-express": "^4.6.3"
+    "swagger-ui-express": "^4.6.3",
+    "validator": "^13.9.0"
   },
   "description": "Projeto em Express.js do BoardTasks Back-End feito para o curso do Rubens Flinco na escola DNC.",
   "main": "index.js",
