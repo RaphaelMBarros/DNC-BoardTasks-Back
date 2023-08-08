@@ -47,7 +47,7 @@ router.post('/logar', conectarBancoDados, async function (req, res) {
           statusMensagem: "Usuario autenticado com sucesso.",
           resposta: { "x-auth-token": token }
         });
-      } else {
+      } else {  
         throw new Error("E-mail ou senha incorreto");
       }
     } else {
